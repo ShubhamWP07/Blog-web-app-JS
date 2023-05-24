@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page-title -->
+    <title>Blog Website</title>
+    <!-- js-file -->
+    <script src="/script.js" defer></script>
+    <!-- css-file -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Header-section -->
+    <header class="main-header-container">
+      <div class="header-section">
+        <div class="left-header-area">
+          <img class="logo" src="/Images/b-logo.png" alt="Logo" />
+        </div>
+        <div class="right-header-area">
+          <button class="createBlog-btn">Create a blog</button>
+        </div>
+      </div>
+    </header>
+    <div class="disc-sec">
+      <p class="disc">
+        To see your created blogs, please go to end of the page.
+      </p>
+    </div>
+
+    <div class="form hidden">
+      <form id="addBlogForm">
+        <input type="text" id="titleInput" placeholder="Enter title" required />
+        <input type="text" id="bodyInput" placeholder="Enter body" required />
+        <input type="submit" class="submit-and-close" value="Add Blog" />
+      </form>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div id="blogList"></div>
+  </body>
+</html>
